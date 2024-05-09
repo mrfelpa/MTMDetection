@@ -40,7 +40,7 @@ def extract_features(pkt):
     if pkt.haslayer(ARP):
         return extract_arp_features(pkt[ARP])
     elif pkt.haslayer("TCP"):
-        return extract_tcp_features(pkt[TCP])
+        return extract_tcp_features(pkt[TCP]) # type: ignore
     else:
         return []  # Return empty features for unsupported packet types
 
@@ -77,7 +77,7 @@ class MITM_Detector(QMainWindow):
 
     def train_model(self):
         # Replace this with actual training data and logic
-        X_train = [extract_arp_features(pkt) for pkt in arp_packets]
+        X_train = [extract_arp_features(pkt) for pkt in arp_packets] # type: ignore
         y_train = [0, 1]  
         self.ml_model.fit(X_train, y_train)
 
