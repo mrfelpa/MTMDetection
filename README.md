@@ -32,5 +32,4 @@
 
 # Future Enhancements
 
-- [ ] feature engineering techniques to extract meaningful information from network packets.
-- [ ] Train the machine learning model with a comprehensive dataset of labeled network traffic (MITM attacks and normal traffic).
+- [X] feature engineering techniques to extract meaningful information from network packets.
