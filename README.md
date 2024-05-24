@@ -10,10 +10,7 @@
 # Prerequisites:
 
 - Python 3.x (https://www.python.org/downloads/)
-- PyQt5 
-- Scapy 
-- scikit-learn 
-  
+ 
 - Install the required libraries using the following command:
 
         pip install -r requirements.txt
